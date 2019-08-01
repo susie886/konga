@@ -16,9 +16,9 @@
                         parent : 'frontend',
                         cache : false,
                         data : {
-                            pageName : "Users",
+                            pageName : "用户",
                             //displayName : "konga users",
-                            pageDescription : "Manage Konga users and user roles"
+                            pageDescription : "管理用户和用户角色"
                         },
                         views: {
                             'content@': {
@@ -56,7 +56,7 @@
                     .state('users.create', {
                         url: '/create',
                         data : {
-                            pageName : "Create User",
+                            pageName : "创建用户",
                             displayName : "create",
                             pageDescription : null
                         },

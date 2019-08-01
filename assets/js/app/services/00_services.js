@@ -17,7 +17,7 @@
             url: '/services',
             data: {
               activeNode: true,
-              pageName: "Services",
+              pageName: "",
               pageDescription: "Service entities, as the name implies, are abstractions of each of your own upstream services. Examples of Services would be a data transformation microservice, a billing API, etc.",
               //displayName : "services",
               prefix: '<i class="material-icons">cloud_queue</i>'

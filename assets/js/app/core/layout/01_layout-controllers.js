@@ -232,11 +232,11 @@
             show: function () {
               return AuthService.isAuthenticated()
             },
-            title: 'Dashboard',
+            title: '面板',
             access: AccessLevels.user
           },
           {
-            title: 'API Gateway',
+            title: 'API 网关',
             show: function () {
               return AuthService.isAuthenticated() && $rootScope.Gateway
             },
@@ -247,7 +247,7 @@
             show: function () {
               return AuthService.isAuthenticated() && $rootScope.Gateway
             },
-            title: 'Info',
+            title: '网关信息',
             icon: 'mdi-information-outline',
             access: AccessLevels.admin
           },
@@ -265,7 +265,7 @@
             show: function () {
               return AuthService.hasPermission('services', 'read') && $rootScope.isGatewayVersionEqOrGreater('0.13.0')
             },
-            title: 'Services',
+            title: 'API注册',
             icon: 'mdi-cloud-outline',
             access: AccessLevels.user
           },
@@ -274,7 +274,7 @@
             show: function () {
               return AuthService.hasPermission('routes', 'read') && $rootScope.isGatewayVersionEqOrGreater('0.13.0')
             },
-            title: 'Routes',
+            title: '代理注册',
             icon: 'mdi-directions-fork',
             access: AccessLevels.user
           },
@@ -292,7 +292,7 @@
             show: function () {
               return AuthService.hasPermission('consumers', 'read') && $rootScope.Gateway
             },
-            title: 'Consumers',
+            title: '消费者管理',
             icon: 'mdi-account-outline',
             access: AccessLevels.user
           },
@@ -302,7 +302,7 @@
             show: function () {
               return AuthService.hasPermission('plugins', 'read') && $rootScope.Gateway
             },
-            title: 'Plugins',
+            title: '插件管理',
             access: AccessLevels.anon
           },
           {
@@ -311,7 +311,7 @@
             show: function () {
               return AuthService.hasPermission('upstreams', 'read') && UserService.user().node && $rootScope.isGatewayVersionEqOrGreater('0.10.0');
             },
-            title: 'Upstreams',
+            title: '负载均衡',
             access: AccessLevels.anon
           },
           {
@@ -320,11 +320,11 @@
             show: function () {
               return AuthService.hasPermission('certificates', 'read') && UserService.user().node && $rootScope.isGatewayVersionEqOrGreater('0.10.0');
             },
-            title: 'Certificates',
+            title: '证书管理',
             access: AccessLevels.anon
           },
           {
-            title: 'Application',
+            title: '应用管理',
             show: function () {
               return AuthService.hasPermission('users', 'read') || AuthService.hasPermission('connections', 'read');
             },
@@ -336,7 +336,7 @@
             show: function () {
               return AuthService.isAuthenticated() && AuthService.hasPermission('users', 'read');
             },
-            title: 'Users',
+            title: '用户管理',
             access: AccessLevels.anon
           },
           {
@@ -345,7 +345,7 @@
             show: function () {
               return AuthService.isAuthenticated() && AuthService.hasPermission('connections', 'read');
             },
-            title: 'Connections',
+            title: '环境配置',
             access: AccessLevels.anon
           },
           {
@@ -354,7 +354,7 @@
             show: function () {
               return AuthService.authorize(AccessLevels.admin);
             },
-            title: 'Snapshots',
+            title: '快照管理',
             access: AccessLevels.admin
           },
           // {
@@ -372,7 +372,7 @@
             show: function () {
               return AuthService.authorize(AccessLevels.admin);
             },
-            title: 'Settings',
+            title: '属性配置',
             access: AccessLevels.admin
           },
         ];

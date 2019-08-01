@@ -18,10 +18,14 @@
     max-width: 98%;
     transition: all 0.5s;
 
-    img {
-      margin: auto;
+    // img {
+    //   margin: auto;
+    // }
+    .logo_api{
+      font-size: 40px;
+      font-weight: 700;
+      font-family:-webkit-pictograph
     }
-
     button {
       border-radius: 25px;
       padding: 10px 16px;

@@ -161,7 +161,7 @@
               $scope.loading = false;
               console.log("LOADED CONSUMER SERVICES =>", $scope.items)
               // _fetchRoutes();
-
+           
             }).catch(err => {
             $scope.loading = false;
             MessageService.error(`Something went wrong...`)
